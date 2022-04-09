@@ -5,32 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC Assembler | Первый курс по компьютерной сборке</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=PT+Serif:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <nav class="heder__nav">
-            <a href="#" class="logo header__logo">
-                <img src="./img/logo.svg" alt="pc-assembler-logo">
-            </a>
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#" class="header__nav-item-link">Главная</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-item-link">Курсы</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-item-link">Расписание</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-item-link">Преподаватели</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-item-link">Рассылка</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-item-link">Контакты</a></li>
-            </ul>
-            <button class="btn header__login">Зайти в кабинет</button>
-        </nav>
+            <nav class="header__nav">
+                <a href="#" class="logo header__logo">
+                    <img src="./img/logo.svg" alt="pc-assembler-logo">
+                </a>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Главная</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Курсы</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Расписание</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Преподаватели</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Рассылка</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Контакты</a></li>
+                </ul>
+                <button class="btn header__login">Зайти в кабинет</button>
+            </nav>
+        </div>
 
         <div class="container">
             <h1 class="header__main-title">Первый курс<br>по компьютерной сборке</h1>
-            <div class="header__timer"></div>
-            <div class="header__statistics"></div>
+            <div class="counter" id="countdown">
+                <ul class="counter__list">
+                  <li class="counter__days"><span class="counter__numbers-count" id="days"></span><span class="counter__text">дней</span></li>
+                  <li class="counter__hours"><span class="counter__numbers-count" id="hours"></span><span class="counter__text">часов</span></li>
+                  <li class="counter__minutes"><span class="counter__numbers-count" id="minutes"></span><span class="counter__text">минут</span></li>
+                  <li class="counter__seconds"><span class="counter__numbers-count" id="seconds"></span><span class="counter__text">секунд</span></li>
+                </ul>
+              </div>
+        </div>
+
+        <div class="header__statistics">
+            <div class="container">
+                <div class="header__statistics-inner">
+                    <button class="btn dark-btn">Заказать курс</button>
+
+                    <div class="header__statistics-container">
+                        <dl class="header__statistics-table">
+                            <dt class="header__statistics-item">Учеников всего:</dt>
+                            <dd class="header__statistics-number">200</dd>
+                        </dl>
+                        <dl class="header__statistics-table">
+                            <dt class="header__statistics-item">Успешно закончили курс:</dt>
+                            <dd class="header__statistics-number">190</dd>
+                        </dl>
+                    </div>
+                    
+                    <div class="header__statistics-progress-container">
+                        <dl class="header__statistics-progress">
+                            <dt class="header__statistics-progress-item">Заработано учениками:</dt>
+                            <dd class="header__statistics-progress-number">400 000₽</dd>
+                        </dl>
+                        <progress class="header__statistics-progressbar" max="1000" value="400"> 40% </progress>
+                    </div>
+                
+                </div>
+            </div>
         </div>
     </header>
 
-    <main>
+    <!-- <main>
         <div class="container">
             <section class="description">
                 <div class="descroption__image"></div>
@@ -97,6 +137,7 @@
                 <div class="social"></div>
             </div>
         </div>
-    </footer>
+    </footer>  -->
+    <script src="./js/script.js"></script>
 </body>
 </html>

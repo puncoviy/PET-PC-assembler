@@ -511,3 +511,45 @@ a {
     font-size: 14px;
     opacity: 0.5;
 }
+
+/* -------------------------------------------------------------- */
+
+
+.profession {
+    margin-top: 200px;
+}
+
+.profession__title {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.profession__list {
+    display: flex;
+    justify-content: center;
+    gap: 82px;
+}
+
+.profession__item {
+    text-align: center;
+}
+
+.profession__item-img {
+    margin-bottom: 60px;
+}
+
+.profession__item-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.profession__item-text {
+    font-size: 16px;
+    opacity: 0.8;
+    max-width: 358px;
+}
+
+/* -------------------------------------------------------------- */
+

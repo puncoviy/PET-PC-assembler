@@ -453,10 +453,10 @@ a {
     position: absolute;
     content: '';
     background: black;
-    width: 76px;
-    height: 76px;
-    left: -118px;
-    top: -2px;
+    width: 70px;
+    height: 70px;
+    left: -115px;
+    top: 1px;
     transform: rotate(45deg);
     border-radius: 50%;
 }
@@ -553,3 +553,31 @@ a {
 
 /* -------------------------------------------------------------- */
 
+.partners {
+    margin-top: 231px;
+}
+
+.partners__list {
+    margin-top: 89px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partners__item {
+    padding: 28px 62px;
+    border-bottom: 1px solid #aeaeae;
+    border-right: 1px solid #aeaeae;
+}
+
+.partners__item:nth-child(4n) {
+    border-right: none;
+}
+
+.partners__item:nth-child(n+5) {
+    border-bottom: none;
+}
+
+.partners__item-img {
+    cursor: pointer;
+}

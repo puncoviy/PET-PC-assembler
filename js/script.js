@@ -26,7 +26,15 @@
         }, 0)
     }());
 
-    let seconds = document.getElementById("seconds").innerText;
-    if (seconds == "1") {
-        console.log('punis')
-    }
+    // let seconds = document.getElementById("seconds").innerText;
+    // if (seconds == "1") {
+    //     console.log('punis')
+    // }
+
+
+
+    let menuList = document.getElementById('menuList')
+    let menuButton = document.getElementById('menuButton');
+    menuButton.addEventListener('click', function() {
+      menuList.classList.toggle('menu-active');
+    })

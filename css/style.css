@@ -176,6 +176,8 @@ a {
     gap: 15px;
     justify-content: space-between;
     align-items: center;
+    text-shadow: 1px 1px 3px black;
+    position: relative;
 }
 
 .header__nav-list {
@@ -187,6 +189,19 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+}
+
+.header__menu-btn {
+    display: none;
+}
+
+.header__menu {
+    display: none;
+    position: relative;
+}
+
+.header__profile {
+    display: none;
 }
 
 /* BUTTONS */
@@ -253,6 +268,7 @@ a {
     font-weight: 700;
     font-size: 64px;
     line-height: 140%;
+    text-shadow: 1px 1px 12px rgb(0 0 0 / 60%);
 }
 
 
@@ -408,7 +424,7 @@ a {
 
 .description__details {
     display: inline-block;
-    max-width: 764px;
+    max-width: 763px;
     padding-left: 139px;
     margin-top: 69px;
     vertical-align: top;
@@ -756,4 +772,50 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 106px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1220px) {
+    .header__nav-list {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .header__nav-list {
+        position: absolute;
+        flex-direction: column;
+        right: 178px;
+        top: 100px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 15px;
+        border-radius: 30px;
+        transition: all 0.5s;
+        
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .menu-active {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .header__menu-btn {
+        display: inline-block;
+        margin-left: auto;
+    }
 }

@@ -28,13 +28,19 @@
 
     // let seconds = document.getElementById("seconds").innerText;
     // if (seconds == "1") {
-    //     console.log('punis')
+    //     console.log('test')
     // }
 
 
 
     let menuList = document.getElementById('menuList')
     let menuButton = document.getElementById('menuButton');
+
     menuButton.addEventListener('click', function() {
       menuList.classList.toggle('menu-active');
+      if (menuList.classList.contains('menu-active')) {
+        window.addEventListener('scroll', function() {
+          menuList.classList.remove('menu-active');
+        })
+      }
     })

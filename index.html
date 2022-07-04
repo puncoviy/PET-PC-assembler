@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC Assembler | Первый курс по компьютерной сборке</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,11 +24,11 @@
                 <button class="btn header__menu-btn" id="menuButton"><span>Меню</span></button>
                 <ul class="header__nav-list" id="menuList">
                     <li class="header__nav-item"><a href="#" class="header__nav-item-link">Главная</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Курсы</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Расписание</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Преподаватели</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Рассылка</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Контакты</a></li>
+                    <li class="header__nav-item"><a href="#descr" class="header__nav-item-link">Курсы</a></li>
+                    <li class="header__nav-item"><a href="#prog" class="header__nav-item-link">Расписание</a></li>
+                    <li class="header__nav-item"><a href="#instr" class="header__nav-item-link">Преподаватели</a></li>
+                    <li class="header__nav-item"><a href="#mail" class="header__nav-item-link">Рассылка</a></li>
+                    <li class="header__nav-item"><a href="#cont" class="header__nav-item-link">Контакты</a></li>
                 </ul>
                 <button class="btn header__login"><span>Зайти в кабинет</span></button>
                 <a href="#" class="header__profile">
@@ -79,7 +80,7 @@
 
     <main>
         <div class="container">
-            <section class="description">
+            <section class="description" id="descr">
                 <div class="descroption__image">
                     <img class="descroption__image-img" src="./img/pc.png" alt="PC">
                 </div>
@@ -169,7 +170,7 @@
                 </ul>
             </section>
 
-            <section class="programm">
+            <section class="programm" id="prog">
                 <h2 class="title programm__title decor">Программа обучения</h2>
                 <p class="programm__text">Больше 90% учеников прошли полный курс и смогли<br>собрать свой первый компьютер</p>
                 
@@ -215,7 +216,7 @@
                 </div>
             </section>
 
-            <section class="instructors">
+            <section class="instructors" id="instr">
                 <h2 class="title decor">Ваши преподаватели</h2>
                 <ul class="instructors__list">
                     <li class="instructors__item">
@@ -241,7 +242,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="mail">
         <div class="container">
             <div class="footer__inner">
                 <h2 class="title footer__title">Статьи каждую неделю</h2>
@@ -250,7 +251,7 @@
                     <input type="email" placeholder="E-mail">
                     <button class="btn dark-btn footer__subscribe" type="submit"><span>Подписаться</span></button>
                 </form>
-                <div class="footer__social">
+                <div class="footer__social" id="cont">
                     <a href="#" class="footer-social-link">
                         <img class="footer__social-img" src="./img/vk.svg" alt="VKontakte">
                     </a>
@@ -267,6 +268,7 @@
             </div>
         </div>
     </footer>
+    <script> const scroll = new SmoothScroll('a[href*="#"]', {speed: 300}); </script>
     <script src="./js/script.js"></script>
 </body>
 </html>

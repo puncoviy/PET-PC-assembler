@@ -33,14 +33,20 @@
 
 
 
-    let menuList = document.getElementById('menuList')
+    let menuList = document.getElementById('menuList');
+    let menuItems= document.querySelectorAll('.header__nav-item');
     let menuButton = document.getElementById('menuButton');
 
     menuButton.addEventListener('click', function() {
       menuList.classList.toggle('menu-active');
+      
       if (menuList.classList.contains('menu-active')) {
         window.addEventListener('scroll', function() {
           menuList.classList.remove('menu-active');
         })
       }
     })
+
+    menuItems.forEach(el => el.addEventListener('click', function() {
+      menuList.classList.toggle('menu-active');
+    }))
